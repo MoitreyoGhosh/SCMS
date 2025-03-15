@@ -1,7 +1,7 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
 
 const SubmissionSchema = new mongoose.Schema({});
 
 
-module.exports = mongoose.model('Submission', SubmissionSchema);
+export const Submission = mongoose.model('Submission', SubmissionSchema);
