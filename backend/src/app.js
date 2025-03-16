@@ -17,9 +17,11 @@ app.use(express.urlencoded({ extended: true, limit: "16kb" }));
 // Routes imports
 import attendanceRoutes from "./routes/attendance.routes.js";
 import noteRoutes from "./routes/note.routes.js";
+import assignmentRoutes from "./routes/assignment.routes.js";
 
 // API routes
 app.use("/api/attendance", attendanceRoutes);
 app.use("/api/notes", noteRoutes);
+app.use("/api/assignments", assignmentRoutes);
 
 export { app };
