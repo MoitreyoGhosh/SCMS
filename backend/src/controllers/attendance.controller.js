@@ -4,7 +4,7 @@ import { stringify } from "csv-stringify";
 import XLSX from "xlsx";
 import { ClassSession } from "../models/classSession.model.js";
 import { Attendance } from "../models/Attendance.model.js";
-import { asyncHandler } from "../utils/AsyncHandler.js";
+import { asyncHandler } from "../utils/asyncHandler.js";
 import { ApiResponse } from "../utils/ApiResponse.js";
 import { ApiError } from "../utils/ApiError.js";
 

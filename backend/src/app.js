@@ -11,13 +11,15 @@ app.use(
 );
 
 app.use(express.json({ limit: "16kb" }));
-app.use(express.urlencoded({ extended: true, limit: "16 kb" }));
+app.use(express.urlencoded({ extended: true, limit: "16kb" }));
 // app.use(express.static("public"));
 
-//routes imports
+// Routes imports
 import attendanceRoutes from "./routes/attendance.routes.js";
+import noteRoutes from "./routes/note.routes.js";
 
-//Api routes
+// API routes
 app.use("/api/attendance", attendanceRoutes);
+app.use("/api/notes", noteRoutes);
 
 export { app };
