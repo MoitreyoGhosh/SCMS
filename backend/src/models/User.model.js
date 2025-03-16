@@ -37,6 +37,13 @@ const userSchema = new mongoose.Schema(
         return this.role === "Student";
       },
     }, // Admin assigns this
+    rollNumber: {
+      type: String,
+      unique: true,
+      required: function () {
+        return this.role === "Student";
+      },
+    }, 
   },
   { timestamps: true }
 );

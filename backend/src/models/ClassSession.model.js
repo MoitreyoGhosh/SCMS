@@ -7,6 +7,11 @@ const classSessionSchema = new mongoose.Schema(
       ref: "Class",
       required: true,
     },
+    streamId: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Stream",
+      required: true,
+    },
     qrCode: {
       type: String,
       required: true,
